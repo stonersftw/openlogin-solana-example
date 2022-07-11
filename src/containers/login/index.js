@@ -26,7 +26,7 @@ function Login() {
   const [solanaPrivateKey, setPrivateKey] = useState(null)
   const [torusNetwork, setTorusNetwork] = useState(null)
   useEffect(() => {
-    const defaultNetwork = localStorage.getItem('network') || 'testnet'
+    const defaultNetwork = localStorage.getItem('network') || 'mainnet'
     setTorusNetwork(defaultNetwork)
   },[])
   useEffect(() => {
